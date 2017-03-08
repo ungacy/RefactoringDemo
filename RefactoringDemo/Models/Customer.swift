@@ -29,11 +29,7 @@ class Customer {
         for each in rentals {
             
             // add frequent renter points
-            frequentRenterPoints += 1
-            // add bounds for a two day new release rental
-            if (each.movie.priceCode == .NEW_RELEASE) && (each.daysRented > 1) {
-                frequentRenterPoints += 1
-            }
+            frequentRenterPoints += each.getFrequentRenterPoints()
             
             // show figures for this rental
             result.append("\t\(each.movie.title)\t\(each.getCharge())\n")
