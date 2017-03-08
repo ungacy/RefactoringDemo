@@ -28,8 +28,6 @@ class Customer {
         // determine amounts for each line
         for each in rentals {
             
-            let thisAmount = each.getCharge()
-            
             // add frequent renter points
             frequentRenterPoints += 1
             // add bounds for a two day new release rental
@@ -38,8 +36,8 @@ class Customer {
             }
             
             // show figures for this rental
-            result.append("\t\(each.movie.title)\t\(thisAmount)\n")
-            totalAmount += thisAmount
+            result.append("\t\(each.movie.title)\t\(each.getCharge())\n")
+            totalAmount += each.getCharge()
             
         }
         // add footer lines
