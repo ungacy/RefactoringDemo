@@ -19,6 +19,8 @@
 		340166C41E6FD1B800C3ECD3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340166B01E6FC01C00C3ECD3 /* Movie.swift */; };
 		340166C51E6FD1B800C3ECD3 /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340166B21E6FC37100C3ECD3 /* Rental.swift */; };
 		340166C61E6FD1B800C3ECD3 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340166B41E6FC46F00C3ECD3 /* Customer.swift */; };
+		340166C81E6FE31000C3ECD3 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340166C71E6FE31000C3ECD3 /* Price.swift */; };
+		344D6E8C1E6FEEF600C68B24 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340166C71E6FE31000C3ECD3 /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		340166BA1E6FD18500C3ECD3 /* RefactoringDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		340166BC1E6FD18500C3ECD3 /* RefactoringDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoringDemoTests.swift; sourceTree = "<group>"; };
 		340166BE1E6FD18500C3ECD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340166C71E6FE31000C3ECD3 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 				340166B01E6FC01C00C3ECD3 /* Movie.swift */,
 				340166B21E6FC37100C3ECD3 /* Rental.swift */,
 				340166B41E6FC46F00C3ECD3 /* Customer.swift */,
+				340166C71E6FE31000C3ECD3 /* Price.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +228,7 @@
 				3401669A1E6FBFD500C3ECD3 /* AppDelegate.swift in Sources */,
 				340166B11E6FC01C00C3ECD3 /* Movie.swift in Sources */,
 				340166B51E6FC46F00C3ECD3 /* Customer.swift in Sources */,
+				340166C81E6FE31000C3ECD3 /* Price.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +239,7 @@
 				340166C41E6FD1B800C3ECD3 /* Movie.swift in Sources */,
 				340166BD1E6FD18500C3ECD3 /* RefactoringDemoTests.swift in Sources */,
 				340166C51E6FD1B800C3ECD3 /* Rental.swift in Sources */,
+				344D6E8C1E6FEEF600C68B24 /* Price.swift in Sources */,
 				340166C61E6FD1B800C3ECD3 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +436,7 @@
 				340166AA1E6FBFD500C3ECD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		340166C11E6FD18500C3ECD3 /* Build configuration list for PBXNativeTarget "RefactoringDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				340166C31E6FD18500C3ECD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,16 +8,36 @@
 
 import Foundation
 
+public enum PriceCodeType: Int {
+    case REGULAR = 0
+    case NEW_RELEASE = 1
+    case CHILDREN = 2
+}
+
 class Movie {
     
-    enum PriceCodeType: Int {
-        case REGULAR = 0
-        case NEW_RELEASE = 1
-        case CHILDREN = 2
-    }
-    
     public var title: String
-    public var priceCode: PriceCodeType
+    public var priceCode: PriceCodeType {
+        set(newValue) {
+            switch newValue {
+            case .REGULAR:
+                price = RegularPrice()
+            case .CHILDREN:
+                price = ChildrenPrice()
+            case .NEW_RELEASE:
+                price = NewReleasePrice()
+            }
+        }
+        get {
+            if let priceValue = price {
+                return priceValue.priceCode()
+            }
+            assert(price != nil, "No price found")
+            return .NEW_RELEASE
+        }
+        
+    }
+    private var price: Price?
     
     init(title: String, priceCode: PriceCodeType) {
         self.title = title
