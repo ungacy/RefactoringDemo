@@ -34,6 +34,20 @@ class Customer {
         return result
     }
     
+    func htmlStatement() -> String {
+        var result = "<H1>Rental Record for <EM>\(name)</EM></H1><P>\n"
+        // determine amounts for each line
+        for each in rentals {
+            // show figures for this rental
+            result.append("\(each.movie.title):\(each.getCharge())<BR>\n")
+            
+        }
+        // add footer lines
+        result.append("<P>You owe <EM>\(getTotalCharge())</EM><P>\n")
+        result.append("On this rental you earned <EM>\(getTotalFrequentRenterPoints())</EM> frequent renter points<P>")
+        return result
+    }
+    
     func getTotalCharge() -> Double {
         var result: Double = 0.0
         for each in rentals {
